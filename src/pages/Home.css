@@ -1,0 +1,71 @@
+/* src/pages/Home.css */
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000; /* Черный фон */
+  padding: 20px;
+  font-family: 'Georgia', serif; /* Винтажный шрифт для текста */
+  color: #8e1c3a; /* Ярко смородиновый цвет текста */
+  opacity: 0; /* Начальная невидимость */
+  animation: fadeIn 2s forwards; /* Анимация появления */
+}
+
+.welcome-message {
+  text-align: center;
+  font-family: 'Georgia', serif; /* Шрифт для винтажного стиля */
+  color: #8e1c3a; /* Смородиновый цвет текста */
+  max-width: 800px;
+  line-height: 1.6;
+  border: 2px solid #e55983; /* Светло-розовая рамка вокруг блока */
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1); /* Полупрозрачный фон с легким оттенком */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Легкая тень для объема */
+  border-radius: 15px;
+  opacity: 0; /* Начальная невидимость */
+  animation: fadeIn 2s 0.5s forwards; /* Задержка появления блока с текстом */
+}
+
+.welcome-message h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #f76b8a; /* Новый яркий цвет для h1 */
+  text-transform: uppercase; /* Заглавные буквы для винтажного стиля */
+  letter-spacing: 3px; /* Расстояние между буквами */
+  opacity: 0; /* Начальная невидимость */
+  animation: fadeIn 1.5s 0.5s forwards; /* Анимация появления с задержкой */
+}
+
+.welcome-message p {
+  font-size: 1.2rem;
+  color: #e55983; /* Яркий смородиновый оттенок для текста */
+  margin-bottom: 15px;
+  text-indent: 30px; /* Отступ в начале каждого абзаца */
+  opacity: 0; /* Начальная невидимость */
+  animation: fadeIn 2s forwards; /* Анимация появления */
+}
+
+.welcome-message p:last-child {
+  margin-bottom: 0;
+}
+
+.welcome-message p::first-letter {
+  font-size: 2.5rem; /* Буква в начале каждого абзаца будет больше */
+  color: #d83f71; /* Новый цвет для первой буквы */
+  font-weight: bold;
+  animation: fadeIn 1.5s 0.7s forwards; /* Анимация для первой буквы с задержкой */
+}
+
+/* Определяем анимацию */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Эффект подъема элементов */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

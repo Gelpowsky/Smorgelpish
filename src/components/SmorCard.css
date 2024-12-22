@@ -1,0 +1,90 @@
+/* src/components/SmorCard.css */
+
+/* Стили для списка продуктов */
+.products-list {
+  display: flex;
+  flex-wrap: wrap; /* Это позволяет карточкам переноситься на новую строку, если не хватает места */
+  gap: 20px; /* Отступ между карточками */
+  justify-content: center; /* Выравнивание карточек по центру */
+  padding: 20px;
+}
+
+/* Стили для карточки товара */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 250px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 1rem;
+  color: #666;
+  text-align: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Новый стиль для заголовка h1 на странице Products (центруем заголовок h1) */
+h1 {
+  text-align: center; /* Центрирование заголовка */
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px; /* Отступ снизу для лучшего визуального восприятия */
+}
+/* src/components/SmorCard.css */
+.quantity-display {
+  font-size: 1.25rem;
+  color: black ;
+  font-weight: bold;
+  margin: 0 10px;
+}
+/* src/components/SmorCard.css */
+
+/* Стили для кнопки добавления товара в корзину */
+.add-to-cart-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+

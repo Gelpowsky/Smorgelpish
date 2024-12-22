@@ -1,0 +1,48 @@
+/* src/layout/Navigation.css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000; /* Черный фон */
+    padding: 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    font-family: 'Montserrat', sans-serif; /* Применяем шрифт Montserrat */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #ff00ff; /* Неоново-фиолетовый */
+  }
+  
+
+  
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 20px;
+  }
+  
+  .nav-links a {
+    font-family: 'Montserrat', sans-serif; /* Применяем шрифт Montserrat */
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff; /* Белый цвет текста */
+    text-decoration: none;
+    text-transform: uppercase; /* Заглавные буквы */
+    letter-spacing: 2px; /* Чуть больше расстояние между буквами */
+    transition: all 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff00ff; /* Неоново-фиолетовый при наведении */
+    text-shadow: 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 30px #ff00ff; /* Эффект неона */
+  }
+  
